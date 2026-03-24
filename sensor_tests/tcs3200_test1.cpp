@@ -56,3 +56,16 @@ void loop() {
 
     delay(200);
 }
+
+/*
+Results:
+
+Surface,R,G,B,C,Logic
+White,20,18,14,5,All values are very low because white reflects all light.
+Red,30,95,72,18,R is the lowest (strongest signal).
+Blue,98,46,22,12, B is the lowest (strongest signal)
+Yellow,20,27,43,8,Both R and G are low (Red + Green = Yellow).
+Green,144,61,64,24, Both G and B are low (gemini say is spectral overlap? idk)
+Black,142,131,101,40,All values are high because black absorbs light
+
+*/
