@@ -1,11 +1,11 @@
 #include <Arduino.h>
 
-#define S0_PIN   5
-#define S1_PIN   6
-#define S2_PIN   15
-#define S3_PIN   16 
-#define OUT_PIN  7
-#define LED_PIN  4
+#define S0_PIN   20
+#define S1_PIN   21
+#define S2_PIN   10
+#define S3_PIN   11 
+#define OUT_PIN  9
+#define LED_PIN  19
 
 void setup() {
     Serial.begin(115200);
@@ -27,8 +27,13 @@ void setup() {
 int readFrequency(int s2State, int s3State) {
     digitalWrite(S2_PIN, s2State);
     digitalWrite(S3_PIN, s3State);
-    delay(10);
-    return pulseIn(OUT_PIN, LOW, 100000);
+    delay(5);
+
+    long total = 0;
+    for (int i = 0; i < 5; i++) {
+        total += pulseIn(OUT_PIN, LOW);
+    }
+    return total / 5;
 }
 
 String detectColour(int r, int g, int b) {

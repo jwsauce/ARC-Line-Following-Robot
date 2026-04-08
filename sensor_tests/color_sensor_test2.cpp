@@ -1,11 +1,11 @@
 #include <Arduino.h>
 
-#define S0_PIN   5
-#define S1_PIN   6
-#define S2_PIN   15
-#define S3_PIN   16 
-#define OUT_PIN  7
-#define LED_PIN  4
+#define S0_PIN   16
+#define S1_PIN   17
+#define S2_PIN   8
+#define S3_PIN   18 
+#define OUT_PIN  3
+#define LED_PIN  15
 
 void setup() {
     Serial.begin(115200);

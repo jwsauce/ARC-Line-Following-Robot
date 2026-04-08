@@ -1,16 +1,16 @@
 #include <Arduino.h>
 
 // ── Left IBT-2 Motor Driver ────────────────────────────
-#define L_RPWM_PIN   17
-#define L_LPWM_PIN   18
-#define L_R_EN_PIN   8
-#define L_L_EN_PIN   3
+#define L_RPWM_PIN   4
+#define L_LPWM_PIN   5
+#define L_R_EN_PIN   6
+#define L_L_EN_PIN   7
 
 // ── Right IBT-2 Motor Driver ───────────────────────────
-#define R_RPWM_PIN   2
-#define R_LPWM_PIN   1
-#define R_R_EN_PIN   42
-#define R_L_EN_PIN   41
+#define R_RPWM_PIN   37
+#define R_LPWM_PIN   38
+#define R_R_EN_PIN   36
+#define R_L_EN_PIN   35
 
 // ── LEDC PWM Settings ─────────────────────────────────
 #define PWM_FREQ     10000
